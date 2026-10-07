@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Violeta Beauty | Maquiagem, Tutoriais e Dicas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  
+
+    <header>
+        <div class="navbar">
+
+            <div class="logo">
+                Violeta<span>.</span>
+            </div>
+
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#tutoriais">Tutoriais</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#dicas">Dicas</a>
+            </nav>
+
+            <div class="header-buttons">
+                <button class="btn-outline" onclick="abrirLogin()">Entrar</button>
+                <button class="btn-primary" onclick="abrirCadastro()">Criar conta</button>
+            </div>
+
+        </div>
+    </header>
+
+
+
+    <main id="inicio">
+
+        <div class="hero">
+
+            <div class="hero-text">
+
+                <small>Seu espaço de beleza</small>
+
+                <h1>
+                    Descubra uma nova
+                    forma de <span>se maquiar.</span>
+                </h1>
+
+                <p>
+                    Encontre produtos, aprenda novas técnicas, descubra
+                    tutoriais personalizados e compartilhe suas próprias
+                    experiências com uma comunidade apaixonada por maquiagem.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#gerador">
+                        <button class="btn-primary">
+                            Encontrar meu estilo
+                        </button>
+                    </a>
+
+                    <a href="#produtos">
+                        <button class="btn-outline">
+                            Explorar produtos
+                        </button>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="floating-card">
+                    <strong>Seu estilo, suas escolhas.</strong>
+                    <p>
+                        Descubra técnicas e produtos que combinam
+                        com você.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <section class="search-area">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Encontre o que procura</small>
+
+                    <h2>Explore o universo da maquiagem</h2>
+
+                    <p>
+                        Pesquise por produtos, técnicas, tutoriais,
+                        resenhas e muito mais.
+                    </p>
+
+                </div>
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Ex.: base, delineado, blush, maquiagem para festa..."
+                    >
+
+                    <button onclick="buscar()">
+                        Buscar
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section>
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Explore</small>
+
+                    <h2>Encontre seu próximo passo</h2>
+
+                    <p>
+                        Navegue pelas principais categorias do Violeta.
+                    </p>
+
+                </div>
+
+                <div class="categories">
+
+                    <div class="category">
+                        <div class="category-icon">BA</div>
+                        <h3>Base</h3>
+                        <p>Pele uniforme e natural</p>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-icon">OL</div>
+                        <h3>Olhos</h3>
+                        <p>Sombras, delineados e cílios</p>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-icon">LB</div>
+                        <h3>Lábios</h3>
+                        <p>Batons, gloss e técnicas</p>
+                    </div>
+
+                    <div class="category">
+                        <div class="category-icon">SK</div>
+                        <h3>Skincare</h3>
+                        <p>Cuidados antes da maquiagem</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="tutoriais">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Aprenda</small>
+
+                    <h2>Tutoriais para todos os estilos</h2>
+
+                    <p>
+                        Passo a passo simples para você experimentar
+                        diferentes técnicas.
+                    </p>
+
+                </div>
+
+                <div class="tutorial-grid">
+
+                    <div class="tutorial">
+
+                        <div class="tutorial-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=800&q=80');">
+                        </div>
+
+                        <div class="tutorial-content">
+
+                            <span class="tag">Iniciante</span>
+
+                            <h3>Maquiagem natural</h3>
+
+                            <p>
+                                Aprenda uma maquiagem leve para o
+                                cotidiano usando poucos produtos.
+                            </p>
+
+                            <a href="#" class="tutorial-link"
+                               onclick="mostrarTutorial('natural')">
+                                Ver tutorial
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tutorial">
+
+                        <div class="tutorial-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=800&q=80');">
+                        </div>
+
+                        <div class="tutorial-content">
+
+                            <span class="tag">Intermediário</span>
+
+                            <h3>Olho esfumado</h3>
+
+                            <p>
+                                Descubra como criar um esfumado elegante
+                                sem deixar a maquiagem pesada.
+                            </p>
+
+                            <a href="#" class="tutorial-link"
+                               onclick="mostrarTutorial('esfumado')">
+                                Ver tutorial
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tutorial">
+
+                        <div class="tutorial-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80');">
+                        </div>
+
+                        <div class="tutorial-content">
+
+                            <span class="tag">Avançado</span>
+
+                            <h3>Delineado perfeito</h3>
+
+                            <p>
+                                Técnicas para construir diferentes
+                                formatos de delineado.
+                            </p>
+
+                            <a href="#" class="tutorial-link"
+                               onclick="mostrarTutorial('delineado')">
+                                Ver tutorial
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="gerador" class="search-area">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Personalize</small>
+
+                    <h2>Monte seu tutorial</h2>
+
+                    <p>
+                        Escolha o estilo que você deseja e receba
+                        uma sugestão de passo a passo.
+                    </p>
+
+                </div>
+
+
+                <div class="generator">
+
+                    <div class="generator-form">
+
+                        <h3>Qual maquiagem você quer?</h3>
+
+                        <p>
+                            Conte ao Violeta qual é o seu objetivo.
+                            Nós montamos uma sugestão de rotina.
+                        </p>
+
+                        <div class="form-group">
+
+                            <label>Estilo</label>
+
+                            <select id="style">
+                                <option value="natural">Natural</option>
+                                <option value="glam">Glam</option>
+                                <option value="romantica">Romântica</option>
+                                <option value="noturna">Noturna</option>
+                                <option value="criativa">Criativa</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Ocasião</label>
+
+                            <select id="occasion">
+                                <option>Dia a dia</option>
+                                <option>Escola</option>
+                                <option>Festa</option>
+                                <option>Evento</option>
+                                <option>Ensaio fotográfico</option>
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Nível de experiência</label>
+
+                            <select id="level">
+                                <option>Iniciante</option>
+                                <option>Intermediário</option>
+                                <option>Avançado</option>
+                            </select>
+
+                        </div>
+
+                        <button class="generate" onclick="gerarTutorial()">
+                            Criar meu tutorial
+                        </button>
+
+                    </div>
+
+
+                    <div class="result" id="result">
+
+                        <h3>Seu tutorial aparecerá aqui</h3>
+
+                        <div class="result-step">
+                            Escolha suas preferências ao lado e clique
+                            em "Criar meu tutorial".
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="produtos" class="products-area">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Escolha melhor</small>
+
+                    <h2>Produtos selecionados</h2>
+
+                    <p>
+                        Compare preços, avaliações e custo-benefício
+                        antes de escolher.
+                    </p>
+
+                </div>
+
+
+                <div class="filters">
+
+                    <button class="filter active" onclick="filtrar('todos', this)">
+                        Todos
+                    </button>
+
+                    <button class="filter" onclick="filtrar('barato', this)">
+                        Até R$ 50
+                    </button>
+
+                    <button class="filter" onclick="filtrar('medio', this)">
+                        R$ 50 - R$ 100
+                    </button>
+
+                    <button class="filter" onclick="filtrar('premium', this)">
+                        Acima de R$ 100
+                    </button>
+
+                    <button class="filter" onclick="filtrar('promo', this)">
+                        Em promoção
+                    </button>
+
+                </div>
+
+
+                <div class="products">
+
+
+                    <div class="product" data-price="barato" data-promo="sim">
+
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1631730486572-226d1f595b68?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <h3>Gloss Labial Hidratante</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <span class="price">
+                            R$ 39,90
+                        </span>
+
+                        <span class="old-price">
+                            R$ 49,90
+                        </span>
+
+                        <button onclick="abrirProduto('Gloss Labial Hidratante')">
+                            Ver produto
+                        </button>
+
+                    </div>
+
+
+                    <div class="product" data-price="medio" data-promo="sim">
+
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <h3>Paleta de Sombras</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <span class="price">
+                            R$ 79,90
+                        </span>
+
+                        <span class="old-price">
+                            R$ 99,90
+                        </span>
+
+                        <button onclick="abrirProduto('Paleta de Sombras')">
+                            Ver produto
+                        </button>
+
+                    </div>
+
+
+                    <div class="product" data-price="premium" data-promo="nao">
+
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <h3>Base Líquida</h3>
+
+                        <div class="stars">
+                            ★★★★☆
+                        </div>
+
+                        <span class="price">
+                            R$ 129,90
+                        </span>
+
+                        <button onclick="abrirProduto('Base Líquida')">
+                            Ver produto
+                        </button>
+
+                    </div>
+
+
+                    <div class="product" data-price="barato" data-promo="sim">
+
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <h3>Blush Compacto</h3>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <span class="price">
+                            R$ 45,90
+                        </span>
+
+                        <span class="old-price">
+                            R$ 59,90
+                        </span>
+
+                        <button onclick="abrirProduto('Blush Compacto')">
+                            Ver produto
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section id="comunidade">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Comunidade</small>
+
+                    <h2>Inspire e seja inspirado</h2>
+
+                    <p>
+                        Compartilhe sua maquiagem, receba avaliações
+                        e troque dicas com outras pessoas.
+                    </p>
+
+                </div>
+
+
+                <div class="community">
+
+                    <div class="post">
+
+                        <div class="post-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1487412912498-0447578fcca8?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <div class="post-content">
+
+                            <div class="user">
+
+                                <div class="avatar">
+                                    A
+                                </div>
+
+                                <div>
+                                    <strong>ana.beauty</strong>
+                                    <small>Há 2 horas</small>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Testei uma maquiagem mais natural hoje.
+                                O que vocês acham? Alguma dica para melhorar?
+                            </p>
+
+                            <div class="post-actions">
+                                <span>24 avaliações</span>
+                                <span>8 dicas</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="post">
+
+                        <div class="post-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <div class="post-content">
+
+                            <div class="user">
+
+                                <div class="avatar">
+                                    M
+                                </div>
+
+                                <div>
+                                    <strong>makeup.mari</strong>
+                                    <small>Há 5 horas</small>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Minha primeira tentativa de olho esfumado.
+                                Finalmente consegui fazer os dois lados parecidos.
+                            </p>
+
+                            <div class="post-actions">
+                                <span>37 avaliações</span>
+                                <span>12 dicas</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="post">
+
+                        <div class="post-image"
+                            style="background-image: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80');">
+                        </div>
+
+                        <div class="post-content">
+
+                            <div class="user">
+
+                                <div class="avatar">
+                                    L
+                                </div>
+
+                                <div>
+                                    <strong>lu.makeup</strong>
+                                    <small>Ontem</small>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Qual delineado combina mais com esse formato
+                                de olho? Quero testar algo diferente.
+                            </p>
+
+                            <div class="post-actions">
+                                <span>42 avaliações</span>
+                                <span>16 dicas</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <section class="publish">
+
+            <div class="section-container">
+
+                <div class="publish-box">
+
+                    <div class="section-header">
+
+                        <small>Faça parte</small>
+
+                        <h2>Compartilhe sua maquiagem</h2>
+
+                        <p>
+                            Publique fotos ou vídeos e receba opiniões
+                            construtivas da comunidade.
+                        </p>
+
+                    </div>
+
+                    <div class="upload">
+
+                        <strong>
+                            Adicione uma foto ou vídeo
+                        </strong>
+
+                        <span>
+                            Arraste seu arquivo para esta área
+                            ou clique para selecionar.
+                        </span>
+
+                    </div>
+
+                    <textarea
+                        placeholder="Escreva uma legenda ou conte sobre os produtos utilizados..."
+                    ></textarea>
+
+                    <br><br>
+
+                    <button class="btn-primary" onclick="publicar()">
+                        Publicar conteúdo
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DICAS -->
+
+        <section id="dicas">
+
+            <div class="section-container">
+
+                <div class="section-header">
+
+                    <small>Conhecimento</small>
+
+                    <h2>Dicas que fazem diferença</h2>
+
+                    <p>
+                        Pequenos cuidados podem transformar o resultado
+                        da sua maquiagem.
+                    </p>
+
+                </div>
+
+
+                <div class="tips">
+
+                    <div class="tip">
+
+                        <h3>Prepare a pele</h3>
+
+                        <p>
+                            Uma pele limpa e hidratada ajuda a maquiagem
+                            a ficar mais uniforme e confortável.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <h3>Respeite seu estilo</h3>
+
+                        <p>
+                            Técnicas de maquiagem são ferramentas.
+                            Experimente diferentes possibilidades e
+                            escolha o que faz sentido para você.
+                        </p>
+
+                    </div>
+
+
+                    <div class="tip">
+
+                        <h3>Observe os produtos</h3>
+
+                        <p>
+                            Antes de comprar, compare preço, avaliações,
+                            composição, acabamento e custo-benefício.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>Violeta.</h3>
+
+                <p>
+                    Um espaço para descobrir, aprender e compartilhar
+                    o universo da maquiagem.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4>Explorar</h4>
+
+                <a href="#tutoriais">Tutoriais</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#comunidade">Comunidade</a>
+                <a href="#dicas">Dicas</a>
+
+            </div>
+
+            <div>
+
+                <h4>Violeta</h4>
+
+                <a href="#">Sobre nós</a>
+                <a href="#">Como funciona</a>
+                <a href="#">Contato</a>
+                <a href="#">Termos de uso</a>
+
+            </div>
+
+            <div>
+
+                <h4>Comunidade</h4>
+
+                <a href="#">Publicar</a>
+                <a href="#">Avaliações</a>
+                <a href="#">Dicas</a>
+                <a href="#">Perguntas frequentes</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 Violeta Beauty. Projeto desenvolvido para fins acadêmicos.
+
+        </div>
+
+    </footer>
+
+
+  
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="fecharModal()">
+                ×
+            </span>
+
+            <h2 id="modalTitle">
+                Violeta
+            </h2>
+
+            <p id="modalText">
+                Conteúdo.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+
+        function abrirModal(titulo, texto) {
+
+            document.getElementById("modalTitle").innerText = titulo;
+
+            document.getElementById("modalText").innerText = texto;
+
+            document.getElementById("modal").style.display = "flex";
+        }
+
+
+        function fecharModal() {
+
+            document.getElementById("modal").style.display = "none";
+
+        }
+
+
+        window.onclick = function(event) {
+
+            const modal = document.getElementById("modal");
+
+            if (event.target === modal) {
+                fecharModal();
+            }
+
+        };
+
+
+
+        function abrirLogin() {
+
+            abrirModal(
+                "Entrar no Violeta",
+                "Área de login do usuário. Em uma versão completa, aqui seriam inseridos e-mail, senha e opção de recuperação de conta."
+            );
+
+        }
+
+
+        function abrirCadastro() {
+
+            abrirModal(
+                "Criar sua conta",
+                "Crie seu perfil para publicar maquiagens, avaliar produtos, receber dicas personalizadas e interagir com a comunidade."
+            );
+
+        }
+
+
+
+        function buscar() {
+
+            const termo =
+                document.getElementById("searchInput").value;
+
+            if (termo.trim() === "") {
+
+                abrirModal(
+                    "Pesquisa",
+                    "Digite alguma coisa para realizar uma busca."
+                );
+
+                return;
+
+            }
+
+            abrirModal(
+                "Resultado da busca",
+                "Você pesquisou por: " + termo +
+                ". Em uma versão completa, o sistema exibiria produtos, técnicas e tutoriais relacionados."
+            );
+
+        }
+
+        function filtrar(tipo, botao) {
+
+            const produtos =
+                document.querySelectorAll(".product");
+
+            const botoes =
+                document.querySelectorAll(".filter");
+
+            botoes.forEach(function(btn) {
+                btn.classList.remove("active");
+            });
+
+            botao.classList.add("active");
+
+
+            produtos.forEach(function(produto) {
+
+                const preco =
+                    produto.getAttribute("data-price");
+
+                const promo =
+                    produto.getAttribute("data-promo");
+
+                if (tipo === "todos") {
+
+                    produto.style.display = "block";
+
+                } else if (tipo === "promo") {
+
+                    produto.style.display =
+                        promo === "sim" ? "block" : "none";
+
+                } else {
+
+                    produto.style.display =
+                        preco === tipo ? "block" : "none";
+
+                }
+
+            });
+
+        }
+
+
+        function abrirProduto(nome) {
+
+            abrirModal(
+                nome,
+                "Este produto possui avaliações, informações de preço, custo-benefício e características. Em uma versão completa, também seria possível comparar ofertas de diferentes lojas."
+            );
+
+        }
+
+
+        function mostrarTutorial(tipo) {
+
+            let titulo = "";
+            let texto = "";
+
+            if (tipo === "natural") {
+
+                titulo = "Tutorial: Maquiagem Natural";
+
+                texto =
+                    "1. Prepare a pele. " +
+                    "2. Aplique uma base leve ou corretivo apenas onde desejar. " +
+                    "3. Use blush suavemente. " +
+                    "4. Penteie as sobrancelhas. " +
+                    "5. Aplique máscara de cílios. " +
+                    "6. Finalize com um gloss ou batom de sua preferência.";
+
+            }
+
+            if (tipo === "esfumado") {
+
+                titulo = "Tutorial: Olho Esfumado";
+
+                texto =
+                    "1. Prepare a pálpebra. " +
+                    "2. Aplique uma sombra de transição. " +
+                    "3. Escureça o canto externo. " +
+                    "4. Esfume as bordas com movimentos leves. " +
+                    "5. Adicione uma sombra mais clara no centro. " +
+                    "6. Finalize com máscara de cílios.";
+
+            }
+
+            if (tipo === "delineado") {
+
+                titulo = "Tutorial: Delineado";
+
+                texto =
+                    "1. Escolha o tipo de delineado. " +
+                    "2. Faça primeiro uma pequena marca no canto externo. " +
+                    "3. Crie a direção do traço. " +
+                    "4. Conecte o traço à linha dos cílios. " +
+                    "5. Preencha o espaço. " +
+                    "6. Faça pequenos ajustes para equilibrar os dois lados.";
+
+            }
+
+            abrirModal(titulo, texto);
+
+        }
+
+
+
+        function gerarTutorial() {
+
+            const estilo =
+                document.getElementById("style").value;
+
+            const ocasiao =
+                document.getElementById("occasion").value;
+
+            const nivel =
+                document.getElementById("level").value;
+
+
+            const resultado =
+                document.getElementById("result");
+
+
+            let titulo = "";
+
+            let passos = [];
+
+
+            if (estilo === "natural") {
+
+                titulo = "Sua maquiagem natural";
+
+                passos = [
+                    "Prepare a pele com limpeza e hidratação.",
+                    "Use uma base ou corretivo de cobertura leve.",
+                    "Aplique blush suavemente nas áreas desejadas.",
+                    "Defina as sobrancelhas de forma natural.",
+                    "Finalize os olhos com máscara de cílios.",
+                    "Use um gloss ou batom confortável."
+                ];
+
+            }
+
+
+            else if (estilo === "glam") {
+
+                titulo = "Sua maquiagem glam";
+
+                passos = [
+                    "Prepare a pele para receber a maquiagem.",
+                    "Construa a cobertura da pele aos poucos.",
+                    "Faça uma marcação suave das áreas que deseja destacar.",
+                    "Aplique sombras em camadas e esfume bem.",
+                    "Adicione delineado e máscara de cílios.",
+                    "Finalize com iluminador e batom."
+                ];
+
+            }
+
+
+            else if (estilo === "romantica") {
+
+                titulo = "Sua maquiagem romântica";
+
+                passos = [
+                    "Comece preparando a pele.",
+                    "Use tons suaves nos olhos.",
+                    "Aplique blush para trazer cor ao rosto.",
+                    "Ilumine pontos estratégicos.",
+                    "Use máscara de cílios.",
+                    "Finalize com um tom suave nos lábios."
+                ];
+
+            }
+
+
+            else if (estilo === "noturna") {
+
+                titulo = "Sua maquiagem noturna";
+
+                passos = [
+                    "Prepare bem a pele.",
+                    "Construa uma cobertura uniforme.",
+                    "Aplique sombras mais profundas no canto externo.",
+                    "Esfume cuidadosamente as transições.",
+                    "Adicione delineado se desejar.",
+                    "Finalize com máscara de cílios e batom."
+                ];
+
+            }
+
+
+            else {
+
+                titulo = "Sua maquiagem criativa";
+
+                passos = [
+                    "Prepare a pele normalmente.",
+                    "Escolha uma paleta de cores.",
+                    "Defina o ponto principal da maquiagem.",
+                    "Crie formas ou combinações de cores.",
+                    "Adicione detalhes criativos.",
+                    "Finalize equilibrando os elementos do rosto."
+                ];
+
+            }
+
+
+            let html =
+                "<h3>" +
+                titulo +
+                "</h3>" +
+
+                "<div class='result-step'>" +
+                "<strong>Ocasião:</strong> " +
+                ocasiao +
+                "</div>" +
+
+                "<div class='result-step'>" +
+                "<strong>Nível:</strong> " +
+                nivel +
+                "</div>";
+
+
+            passos.forEach(function(passo, index) {
+
+                html +=
+                    "<div class='result-step'>" +
+                    "<strong>" +
+                    (index + 1) +
+                    ".</strong> " +
+                    passo +
+                    "</div>";
+
+            });
+
+
+            resultado.innerHTML = html;
+
+        }
+
+
+      
+
+        function publicar() {
+
+            abrirModal(
+                "Publicação",
+                "Sua publicação foi preparada. Em uma versão completa, o conteúdo seria enviado para a comunidade e poderia receber avaliações e comentários."
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
